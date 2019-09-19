@@ -3,11 +3,163 @@
 
 body {
 	font-size: 16px;
-	line-height: 1.65;
+	line-height: 20px;
 	font-family: 'Roboto', sans-serif;
 	color: $text;
 	font-family: 'Hind', sans-serif;
+	box-sizing: border-box;
+}
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+	box-sizing: border-box;
 }
 
+.header {
+	height: 100vh;
+	background: url('../img/1920x1080/01.jpg') center no-repeat;
+	background-size: cover;
+	&-content {
+		height: calc(100vh - 97px);
+		border-top: 1px solid #44423e;
+		&-wrap {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: space-between;
+		}
+		&-logo {
+			margin-top: 28px;
+			span {
+				font-size: 30px;
+				color: #828590;
+			}
+		}
+		&-text {
+			height: 100%;
+			text-align: left;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			h1 {
+				color: #fff;
+				font-size: 70px;
+				font-weight: 700;
+				margin: 0;
+				text-transform: uppercase;
+			}
+			p {
+				font-size: 25px;
+
+				color: #fff;
+				margin-top: 17px;
+			}
+			a {
+				padding: 15px 36px;
+				text-decoration: none;
+				color: #fff;
+				border: 2px solid #fff;
+				text-transform: uppercase;
+				margin: 0;
+
+			}
+		}
+	}
+	&-topbar {
+		height: 97px;
+		display: flex;
+		&-logo__wrap {
+			width: 50%;
+		}
+		&-nav__wrap {
+			width: 50%;
+		}
+		&__logo{
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			height: 100%;
+			span {
+				font-size: 30px;
+				color: #828590;
+			}
+		}
+		&__nav {
+			height: 100%;
+			ul {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				height: 100%;
+				li {
+					a {
+						color: #fff;
+						font-weight: 600;
+						padding: 20px;
+						font-size: 13px;
+						text-decoration: none;
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+	}
+}
+
+.coding {
+	margin-top: 105px;
+	margin-bottom: 120px;
+	text-align: center;
+	&-items {
+		display: flex;
+		justify-content: space-between;
+	}
+	&-item {
+		text-align: left;
+		h3 {
+			color: $head;
+			font-size: 25px;
+		}
+	}
+}
+
+.choose{
+	background-color: #fafafa;
+	&-wrap {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 98px;
+		padding-bottom: 117px;
+		&-inner1 {
+			width: 60%;
+			p {
+				width: 443px;
+			}
+			h3 {
+				color: $head;
+				font-size: 25px;
+			}
+		}
+		&-inner2 {
+			width: 40%;
+			.text {
+				padding: 35px 25px;
+				background-color: #fff;
+			&__text1 {
+				background-color: #0fc0d3;
+				color: #fff;
+			}
+
+			}
+		}
+	}
+}
  /* in the end*/
  @import "media";
